@@ -1,6 +1,9 @@
 /* @refresh reload */
-import { render } from 'solid-js/web';
+import { load as loadCA } from "crossani";
+import { render } from "solid-js/web";
 
-import App from './App';
+import App from "./App";
 
-render(() => <App />, document.getElementById('root') as HTMLElement);
+loadCA();
+
+render(() => <App />, document.getElementById("root") as HTMLElement);
